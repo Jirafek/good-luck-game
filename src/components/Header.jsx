@@ -57,7 +57,7 @@ const Header = () => {
                                 ВЫГОДА
                             </li>
                         </a>
-                        <a href="https://t.me/loyreddd" target="_blank">
+                        <a href="https://t.me/glg_support\" target="_blank">
                             <li className="duration-300 md:py-4 md:px-8 py-2 px-4 text-white bg-black cursor-pointer hover:text-black hover:bg-[#f1ec3f] text-[.875rem]">
                                 ЗАДАТЬ ВОПРОС
                             </li>
