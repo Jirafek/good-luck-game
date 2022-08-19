@@ -10,7 +10,7 @@ const Footer = () => {
                     </div>
                     <ul className="flex gap-6">
                         <li>
-                            <a target="_blank" href="https://t.me/loyreddd">
+                            <a target="_blank" href="https://t.me/glg_support\">
                                 <img src="/image/telegram.png" alt="" />
                             </a>
                         </li>
