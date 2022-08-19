@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'SSM';
+    src: font-url(../../public/font/sans-serif-medium.ttf) format('truetype');
+  }
+}
+
+@media (max-width: 640px) {
+  .bitch-sec {
+    height: 40rem;
+  }
+}
+@media (max-width: 1920px) {
+  .bitch-sec {
+    height: auto;
+  }
+}
