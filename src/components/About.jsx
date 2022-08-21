@@ -35,6 +35,7 @@ const About = () => {
     const imageData = [
         '/image/basket.png',
         '/image/dota.png',
+        '/image/hockey.png',
     ];
 
     SwiperCore.use([Autoplay]);

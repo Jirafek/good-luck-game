@@ -1,6 +1,6 @@
-import About from '../components/about/About';
+import About from '../components/About';
 import Header from '../components/Header';
-import WhoAreWe from '../components/WhoAreWe/WhoAreWe';
+import WhoAreWe from '../components/WhoAreWe';
 import Footer from '../components/Footer';
 
 const Home = () => {
