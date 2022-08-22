@@ -19,3 +19,7 @@
     height: auto;
   }
 }
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: #50d083 !important;
+}

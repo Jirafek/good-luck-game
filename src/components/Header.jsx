@@ -50,8 +50,17 @@ const Header = () => {
                                 О НАС
                             </li>
                         </Link>
+                        <Link 
+                        to="numi"
+                        smooth={true}
+                        duration={800}
+                        spy={true}
+                        >
+                            <li className="duration-300 1920:block hidden hover:text-[#f1ec3f]">
+                                КАЛЬКУЛЯТОР
+                            </li>
+                        </Link>
                         <a href="#"><li className="duration-300 1920:block hidden hover:text-[#f1ec3f]">ТАРИФЫ</li></a>
-                        <a href="#"><li className="duration-300 1920:block hidden hover:text-[#f1ec3f]">КАЛЬКУЛЯТОР</li></a>
                         <a href="#">
                             <li className="duration-300 1920:block hidden hover:text-[#f1ec3f]">
                                 ВЫГОДА

@@ -1,6 +1,7 @@
 import About from '../components/About';
 import Header from '../components/Header';
 import WhoAreWe from '../components/WhoAreWe';
+import Numi from '../components/Numi';
 import Footer from '../components/Footer';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
                 <Header />
                 <About />
                 <WhoAreWe />
+                <Numi />
             </div>
             <Footer />
         </main>
