@@ -47,6 +47,10 @@ const Numi = () => {
         {
             name: 'Август 2022',
             x: 48
+        },
+        {
+            name: 'Июль 2022',
+            x: 20
         }
     ]
 
@@ -63,7 +67,7 @@ const Numi = () => {
         let items = moneyData.map((el, i) => {
             const total = moneyState*el.x;
             return (
-                <div key={i} className="flex flex-col gap-3">
+                <div key={i} className="flex flex-col gap-2">
                     <p className="text-lg text-[#828282]">
                         {el.name}
                     </p>
@@ -77,10 +81,10 @@ const Numi = () => {
     }
 
     return (
-        <section id="numi" className="h-[900px] flex justify-center">
-            <div className="flex flex-col items-center py-28">
-                <h2 className="uppercase font-bold text-7xl mb-14">Калькулятор дохода</h2>
-                <p className="text-[1.875rem] max-w-[51.875rem] mb-20">Узнай сколько ты мог бы заработать исходя из статистики предыдущих месяцев, просто подставь свой рабочий флет</p>
+        <section id="numi" className="flex justify-center">
+            <div className="flex flex-col items-center py-12">
+                <h2 className="uppercase font-bold lg:text-7xl sm:text-[2.5rem] text-[1rem] mb-14">Калькулятор дохода</h2>
+                <p className="lg:text-[1.875rem] sm:text-base text-[0.775rem] lg:max-w-[51.875rem] sm:max-w-[28.75rem] max-w-[15.75rem] sm:mb-20 mb-12">Узнай сколько ты мог бы заработать исходя из статистики предыдущих месяцев, просто подставь свой рабочий флет</p>
                 <div className="flex flex-col">
                     <p className="text-[#828282] text-lg mb-4">Ваш средний флет</p>
                     <p className="duration-300 border border-[#bdbdbd] p-5 text-lg font-bold border-b-0">
@@ -95,9 +99,9 @@ const Numi = () => {
                         onChange={rangeChange}
                         />
                     </Box>
-                    <div className="flex flex-wrap justify-center">
-                        {setMonthes()}
-                    </div>
+                </div>
+                <div className="flex flex-wrap justify-center gap-x-10">
+                    {setMonthes()}
                 </div>
             </div>
         </section>

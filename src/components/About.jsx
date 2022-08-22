@@ -36,6 +36,7 @@ const About = () => {
         '/image/basket.png',
         '/image/dota.png',
         '/image/hockey.png',
+        '/image/mortal.png'
     ];
 
     SwiperCore.use([Autoplay]);
