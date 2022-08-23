@@ -1,7 +1,7 @@
 
 const Police = () => {
     return (
-        <section className="bg-white flex">
+        <section className="sm:bg-white bg-black flex">
             <div className="bg-black py-16 flex my-14 max-w-7xl items-center sm:flex-row flex-col">
                 <img className="h-[9rem]" src="/image/doodle.png" alt="" />
                 <p className="lg:text-[1.875rem] text-[1.375rem] text-white text-center">
