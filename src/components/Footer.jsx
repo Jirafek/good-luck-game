@@ -15,7 +15,7 @@ const Footer = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a target="_blank" href="https://www.tiktok.com/@glg_sport?_t=8V3IMWLHTkc&_r=1">
                                 <img className="h-[24px]" src="/image/tiktok.png" alt="" />
                             </a>
                         </li>

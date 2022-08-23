@@ -45,12 +45,12 @@ const PrettoSlider = styled(Slider)({
 const Numi = () => {
     const moneyData = [
         {
-            name: 'Август 2022',
-            x: 48
-        },
-        {
             name: 'Июль 2022',
             x: 20
+        },
+        {
+            name: 'Август 2022',
+            x: 48
         }
     ]
 
@@ -71,7 +71,7 @@ const Numi = () => {
                     <p className="text-lg text-[#828282]">
                         {el.name}
                     </p>
-                    <p style={total > 0 ? {color: '#50d083'} : {color: '#e9463a'}} className="font-bold text-[2.5rem]">
+                    <p style={total > 0 ? {color: '#50d083'} : {color: '#e9463a'}} className="font-bold text-[2.5rem] w-56">
                         {total} BYN
                     </p>
                 </div>

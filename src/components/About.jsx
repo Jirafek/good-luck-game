@@ -66,7 +66,7 @@ const About = () => {
                 <span className="text-[#f1ec3f]">Good Luck Game</span> - твой проводник в мир ставок
             </m.h2>
             <Link
-            to="subscribe"
+            to="rates"
             smooth={true}
             duration={800}
             spy={true}
