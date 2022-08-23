@@ -30,14 +30,38 @@ const headingLines2 = {
   };
 
 const Header = () => {
-    const [state, setState] = useState({
-      
-    });
+    const [displayState, setDisplayState] = useState('block');
+    const [menuState, setMenuState] = useState({
+        z: '-1',
+        opacity: '0'
+    })
 
     function openMenu() {
+        if (displayState === 'block') {
+            setDisplayState('none') // menu opening
+            setMenuState({
+                z: '30',
+                opacity: '1'
+            });
+        } else {
+            setDisplayState('block'); // menu closing
+            setMenuState({
+                z: '-1',
+                opacity: '0'
+            });
+        }
+    }
+
+    function closeMenu() {
+        setDisplayState('block'); // menu closing
+        setMenuState({
+            z: '-1',
+            opacity: '0'
+        });
     }
 
     return (
+        <>
         <header className="absolute top-0 z-10 w-full bg-transparent">
             <m.div
             variants={heading}
@@ -83,15 +107,57 @@ const Header = () => {
                                     ЗАДАТЬ ВОПРОС
                                 </li>
                             </a>
-                            <div onClick={openMenu} className="1920:hidden flex flex-col gap-y-[6px] cursor-pointer">
-                                <span style={{ display: '' }} className="h-[2px] w-[30px] bg-black delay-500"></span>
-                                <span style={{ display: '' }} className="h-[2px] w-[30px] bg-black delay-500"></span>
-                                <span style={{ display: '' }} className="h-[2px] w-[30px] bg-black delay-500"></span>
+                            <div onClick={openMenu} className="1920:hidden flex flex-col gap-y-[6px] cursor-pointer w-[30px]">
+                                <span style={{ display: displayState }} className="h-[2px] w-full bg-black duration-500"></span>
+                                <span style={{ display: displayState }} className="h-[2px] w-full bg-black duration-500"></span>
+                                <span style={{ display: displayState }} className="h-[2px] w-full bg-black duration-500"></span>
+                                <img 
+                                    style={ displayState === 'block' ? {display: 'none'} : {display: 'block'} } 
+                                    className="w-full" 
+                                    src="/image/cross.png" 
+                                    alt="" 
+                                />
                             </div>
                         </div>
                     </ul>
             </m.div>
         </header>
+        <div
+            style={{ zIndex: menuState.z, opacity: menuState.opacity }}
+            className="absolute text-[1rem] font-bold tracking-[.1em] bg-[#333] text-white rounded-2xl top-[7.5rem] flex flex-col right-4 duration-500 h-56 w-40 px-4 justify-around z-30 items-center"
+        >
+            <Link 
+            to="whoarewe"
+            smooth={true}
+            duration={800}
+            spy={true}
+            className="duration-300 hover:text-[#f1ec3f]"
+            onClick={closeMenu}
+            >
+                О НАС
+            </Link>
+            <Link 
+            to="numi"
+            smooth={true}
+            duration={800}
+            spy={true}
+            className="duration-300 hover:text-[#f1ec3f]"
+            onClick={closeMenu}
+            >
+                КАЛЬКУЛЯТОР
+            </Link>
+            <Link 
+            to="rates"
+            smooth={true}
+            duration={800}
+            spy={true}
+            className="duration-300 hover:text-[#f1ec3f]"
+            onClick={closeMenu}
+            >
+                ТАРИФЫ
+            </Link>
+        </div>
+        </>
     );
 }
 
