@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import WhoAreWe from '../components/WhoAreWe';
 import Numi from '../components/Numi';
 import Rates from '../components/Rates';
+import Police from '../components/Police'
 import Footer from '../components/Footer';
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
                 <Numi />
             </div>
             <Rates />
+            <Police />
             <Footer />
         </main>
     );

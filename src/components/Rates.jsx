@@ -43,7 +43,13 @@ const Rates = () => {
     const textData3 = [
         'Не менее 186 прогнозов',
         'Винрейт 55+%',
-        'возврат средств за подписку при просадке вашего банка',
+        'Возврат средств за подписку при просадке вашего банка',
+    ];
+
+    const textData4 = [
+        'Не менее 30 прогнозов в месяц',
+        'Винрейт 55+%',
+        'Бесплатный прогноз на каждый день',
     ];
 
     function createText(texts) {
@@ -62,14 +68,14 @@ const Rates = () => {
 
     return (
         <section id="rates" className="w-full bg-[#1a1a1a] flex justify-center">
-            <div className="flex flex-col py-28 max-w-[77.5rem]">
+            <div className="flex flex-col py-28 max-w-[77.5rem] items-center">
                 <p className="text-white uppercase font-bold mb-[7.5rem] lg:text-[5rem] text-[2rem] text-center">Выбери подписку</p>
                 <m.div
                     variants={heading}
                     initial='hidden'
                     whileInView='visible'
                     viewport={{ once: true }} 
-                    className="flex items-center lg:flex-row flex-col gap-y-10"
+                    className="flex items-center lg:flex-row flex-col gap-y-10 mb-10"
                 >
                     <div className="flex flex-col p-10 duration-300 bg-[#333] hover:bg-[#000] xl:w-[25.5rem] w-[20.5rem] items-center h-[37.8125rem] justify-between relative">
                         <img className="absolute right-10 top-6" src="/image/icon-fire.png" alt="" />
@@ -120,6 +126,21 @@ const Rates = () => {
                         </button>
                     </div>
                 </m.div>
+                <div className="flex flex-col p-10 duration-300 bg-[#333] hover:bg-[#000] xl:w-[25.5rem] w-[20.5rem] items-center h-[37.8125rem] justify-between relative">
+                    <m.div variants={headingLines2} className="flex flex-col items-center">
+                        <div className="mb-[3.75rem] flex flex-col items-center">
+                            <p className="uppercase text-[#bdbdbd] text-base font-medium mb-5 tracking-[.2em]">Подписка</p>
+                            <p className="uppercase mb-5 text-[#fff] text-[2rem] font-bold">бесконечно</p>
+                            <p className="text-[#50d083] text-[2.125rem] font-bold">Бесплатно</p>
+                        </div>
+                        <div className="self-start flex flex-col gap-4 text-[#e0e0e0] text-lg">
+                            {createText(textData4)}
+                        </div>
+                    </m.div>
+                    <button className="text-[1rem] text-center py-4 px-8 cursor-pointer min-w-[16.875rem] tracking-[.1em] duration-200 text-black bg-[#f1ec3f]">
+                        ПОДПИСАТЬСЯ
+                    </button>
+                </div>
             </div>
         </section>
     );

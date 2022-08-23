@@ -124,7 +124,7 @@ const Header = () => {
         </header>
         <div
             style={{ zIndex: menuState.z, opacity: menuState.opacity }}
-            className="absolute text-[1rem] font-bold tracking-[.1em] bg-[#333] text-white rounded-2xl top-[7.5rem] flex flex-col right-4 duration-500 h-56 w-40 px-4 justify-around z-30 items-center"
+            className="absolute text-[1rem] font-bold tracking-[.1em] bg-[#333] text-white rounded-2xl top-[7.5rem] flex flex-col right-4 duration-500 h-48 w-40 py-6 justify-around z-30 items-center"
         >
             <Link 
             to="whoarewe"
