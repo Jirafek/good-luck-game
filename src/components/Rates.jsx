@@ -14,7 +14,6 @@ const Rates = () => {
     ];
 
     const textData3 = [
-        'Дешёвая стоимость 1 прогноза',
         'Не менее 186 прогнозов',
         'Винрейт 55+%',
         'возврат средств за подписку при просадке вашего банка',
@@ -39,7 +38,7 @@ const Rates = () => {
             <div className="flex flex-col py-28 max-w-[77.5rem]">
                 <p className="text-white uppercase font-bold mb-[7.5rem] lg:text-[5rem] text-[2rem] text-center">Выбери подписку</p>
                 <div className="flex items-center lg:flex-row flex-col gap-y-10">
-                    <div className="flex flex-col p-10 duration-300 bg-[#333] hover:bg-[#000] xl:w-[25.5rem] w-[21.5rem] items-center h-[37.8125rem] justify-between relative">
+                    <div className="flex flex-col p-10 duration-300 bg-[#333] hover:bg-[#000] xl:w-[25.5rem] w-[20.5rem] items-center h-[37.8125rem] justify-between relative">
                         <img className="absolute right-10 top-6" src="/image/icon-fire.png" alt="" />
                         <div className="flex flex-col items-center">
                             <div className="mb-[3.75rem] flex flex-col items-center">
@@ -55,7 +54,7 @@ const Rates = () => {
                             ПОДПИСАТЬСЯ
                         </button>
                     </div>
-                    <div className="flex flex-col p-14 duration-300 bg-[#333] hover:bg-[#000] xl:w-[26.5rem] w-[22.5rem] items-center h-[41rem] justify-between border-2 border-[#ffd15c] relative">
+                    <div className="flex flex-col p-14 duration-300 bg-[#333] hover:bg-[#000] xl:w-[26.5rem] w-[20.5rem] items-center h-[41rem] justify-between border-2 border-[#ffd15c] relative">
                         <img className="absolute right-10 top-6" src="/image/icon-diamond.png" alt="" />
                         <div className="flex flex-col items-center">
                             <div className="mb-[3.75rem] flex flex-col items-center">
@@ -71,7 +70,7 @@ const Rates = () => {
                             ПОДПИСАТЬСЯ
                         </button>
                     </div>
-                    <div className="flex flex-col p-10 duration-300 bg-[#333] hover:bg-[#000] xl:w-[25.5rem] w-[21.5rem] items-center h-[37.8125rem] justify-between relative">
+                    <div className="flex flex-col p-10 duration-300 bg-[#333] hover:bg-[#000] xl:w-[25.5rem] w-[20.5rem] items-center h-[37.8125rem] justify-between relative">
                         <img className="absolute right-10 top-6 w-[3.125rem]" src="/image/bitc.png" alt="" />
                         <div className="flex flex-col items-center">
                             <div className="mb-[3.75rem] flex flex-col items-center">
