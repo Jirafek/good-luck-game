@@ -1,5 +1,5 @@
 import About from '../components/About';
-import Morgen from '../components/Morgen';
+import FreeBet from '../components/FreeBet';
 import Header from '../components/Header';
 import WhoAreWe from '../components/WhoAreWe';
 import Numi from '../components/Numi';
@@ -13,7 +13,7 @@ const Home = () => {
             <div className="1920:w-[120rem] w-full relative">
                 <Header />
                 <About />
-                <Morgen />
+                <FreeBet />
                 <WhoAreWe />
                 <Numi />
             </div>
