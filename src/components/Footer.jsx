@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
                 <div className="flex justify-between sm:flex-row flex-col-reverse">
                     <p className="text-white">
-                        &copy; GLG 2022
+                        &copy; GLG 2023
                     </p>
                     <div className="flex gap-3">
                         <a

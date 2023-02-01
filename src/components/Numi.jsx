@@ -67,12 +67,14 @@ const Numi = () => {
         {
             name: 'Декабрь 2022',
             x: 73
+        },
+        {
+            name: 'Январь 2023',
+            x: 50
         }
     ]
 
     const [moneyState, setMoneyState] = useState(10);
-    const [monthState, setMonthState] = useState(
-    );
 
     function rangeChange(e) {
         const target = e.target;

@@ -9,6 +9,24 @@
   }
 }
 
+@layer components {
+  .link {
+    @apply text-base font-medium transition-colors hover:bg-opacity-50;
+  }
+
+  .button {
+    @apply inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-sm font-bold uppercase transition-colors hover:bg-opacity-50;
+  }
+
+  .button.button-small {
+    @apply text-lg lg:py-3 lg:text-lg;
+  }
+
+  .heading {
+    @apply text-3xl font-extrabold uppercase lg:text-4xl;
+  }
+}
+
 @media (max-width: 640px) {
   .bitch-sec {
     height: 40rem;

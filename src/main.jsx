@@ -6,7 +6,6 @@ import App from './App';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <BrowserRouter>
       <LazyMotion features={domAnimation} strict>
         <Suspense fallback={null}>
@@ -14,5 +13,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Suspense>
       </LazyMotion>
     </BrowserRouter>
-  </React.StrictMode>
 );
